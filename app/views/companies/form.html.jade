@@ -1,0 +1,16 @@
+.control-group
+  label(for="name", class="control-label") name
+  .controls
+    != contentTag('input', company.name, {type:'text', class:'span6', name:'name'})
+.control-group
+  label(for="source", class="control-label") source
+  .controls
+    != contentTag('input', company.source, {type:'text', class:'span6', name:'source'})
+.control-group
+  label(for="status", class="control-label") status
+  .controls
+    != contentTag('input', company.status, {type:'text', class:'span6', name:'status'})
+.control-group
+  label(for="notes", class="control-label") notes
+  .controls
+    != contentTag('textarea', '', {class: 'span6', name: 'notes', rows: 10})

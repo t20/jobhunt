@@ -1,0 +1,14 @@
+.hero-unit
+  h2 All Companies
+  != linkTo('Create a new Company', addCompanyPath, {class: 'btn pull-right'})
+
+div#companies-list
+  if companies
+    each company in companies
+      .row.list-item(id="company-" + company.id)
+        .span8
+          h3!= linkTo(company.name, companyPath(company.id))
+        .span4
+          h3
+            i.icon-list-alt
+            = company.id

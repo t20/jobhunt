@@ -1,0 +1,15 @@
+.hero-unit
+  form#company-form.form-horizontal(action="/companies/" + params.id + "?_method=PUT", method="POST")
+    fieldset
+      legend Update this Company
+      if params.errors
+        .control-group
+          ul
+          for err in params.errors
+            li= err
+
+      != partial('form', {company: company})
+
+      .form-actions
+        != contentTag('input', 'Save', {type: 'submit', class: 'btn btn-primary'})
+        != contentTag('button', 'Remove', {type: 'submit', formaction: '/companies/' + params.id + '?_method=DELETE', formmethod: 'POST', class: 'btn btn-danger'})
