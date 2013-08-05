@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "author": "",
   "dependencies": {
-    "jade": "*"
+    "jade": "*",
+    "mongodb-wrapper": "*"
   },
   "devDependencies": {},
   "engines": {

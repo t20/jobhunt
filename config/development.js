@@ -22,7 +22,12 @@ var config = {
 , hostname: null
 , port: 4000
 , model: {
-    defaultAdapter: 'memory'
+    defaultAdapter: 'mongo'
+  }
+, db: {
+    mongo: {
+      dbname: 'jobhunt'
+    }
   }
 , sessions: {
     store: 'memory'
