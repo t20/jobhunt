@@ -1,5 +1,6 @@
 var Companies = function () {
   this.respondsWith = ['html', 'json', 'xml', 'js', 'txt'];
+  this.before(require('../helpers/passport').requireAuth);
 
   this.index = function (req, resp, params) {
     var self = this;

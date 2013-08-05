@@ -4,7 +4,10 @@
   "author": "",
   "dependencies": {
     "jade": "*",
-    "mongodb-wrapper": "*"
+    "mongodb-wrapper": "*",
+    "bcrypt": "0.7.x",
+    "jake": "0.5.x",
+    "passport": "0.1.x"
   },
   "devDependencies": {},
   "engines": {
