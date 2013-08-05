@@ -6,7 +6,7 @@ div#companies-list
   if companies
     .row.list-item
       .span3
-        h3 Name
+        h4 Name
       .span2
         h4 Source
       .span3
@@ -17,7 +17,7 @@ div#companies-list
     each company in companies
       .row.list-item(id="company-" + company.id)
         .span3
-          h3!= linkTo(company.name, companyPath(company.id))
+          h4!= linkTo(company.name, companyPath(company.id))
         .span2
           h4 #{company.source}
         .span3
