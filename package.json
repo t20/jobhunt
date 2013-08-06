@@ -6,6 +6,7 @@
     "geddy": "0.9.12",
     "async": "*",
     "jade": "*",
+    "mongodb": "*",
     "mongodb-wrapper": "*",
     "bcrypt": "0.7.x",
     "jake": "0.5.x",
