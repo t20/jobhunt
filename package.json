@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "author": "",
   "dependencies": {
+    "geddy": "0.9.12",
+    "async": "*",
     "jade": "*",
     "mongodb-wrapper": "*",
     "bcrypt": "0.7.x",
@@ -11,6 +13,6 @@
   },
   "devDependencies": {},
   "engines": {
-    "node": "0.8.x"
+    "node": "0.10.15"
   }
 }
