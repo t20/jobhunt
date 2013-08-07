@@ -16,6 +16,13 @@
  *
 */
 
+var url = require('url');
+var connectionUri = url.parse(process.env.MONGOHQ_URL);
+var dbName = connectionUri.pathname.replace(/^\//, '');
+var auth = connectionUri.auth.split(':');
+var username = auth[0];
+var password = auth[1];
+
 var config = {
   detailedErrors: false
 , hostname: null
@@ -25,12 +32,12 @@ var config = {
   }
 , db: {
     mongo: {
-      username: null
-    , dbname: 'production'
+      username: username
+    , dbname: dbName
     , prefix: null
-    , password: null
-    , host: 'localhost'
-    , port: 27017
+    , password: password
+    , host: connectionUri.hostname
+    , port: 10066
     }
   }
 
